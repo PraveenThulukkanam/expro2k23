@@ -1,270 +1,196 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-             @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-   
-            .nav-logo {
-                height: 70px;
-                width: 80px;
-                padding-top: 0px;
-                margin-top: 0px;
-                margin-right: 15px;
-            }
-            
-            .nav-heading {
-                font-size: 36px;
-                font-weight: 600;
-                color: white;
-                margin-top: 0px;
-            }
-            .section-heading{
-                color: white;
-                font-weight: 600;
-                font-size: 32px;
-                padding-top: 65px;
-            }
-            .section-bg-container{
-                background-color: black;
-                background-size: cover;
-                
-            }
-            .section-card{
-                background-color: rgb(24, 22, 22);
-                border-radius: 8px;
-                border-width: 0px;
-            }
-            .section-card-description{
-                color: white;
-                font-size: 20px;
-                font-weight: 400;
-            }
-            .section-card-image{
-                height: 300px;
-                width: 100%;
-                border-width: 0px;
-            }
-            .register-now-button {
-                background-image: linear-gradient(to left,#0BAB64#3BB78F);
-                color: silver;
-                border-width: 5px;
-                border-style: outset;
-                font-size: 16px;
-                font-weight: 500;
-            }
-            .contact-us-section {
-                background-color: black;
-            }
 
-            .contact-us-logo {
-                height: 100px;
-            }
+<head>
+    <title>NON TECHNICAL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-            .contact-us-section-icon-container {
-                width: 40px;
-                height: 40px;
-                border-radius: 40px;
-                padding-top: 12px;
-                padding-bottom: 35px;
-                padding-right: 30px;
-                padding-left: 15px;
-                background-color: #202b36;
-                margin-right: 8px;
-                margin-bottom: 8px;
-                text-align: center;
-            }
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-            .icon {
-                color: #5a7184;
-                font-size: 18px;
-            }
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-            .contact-us-section-text {
-                color: #5a7184;
-                font-family: "Roboto";
-                font-size: 16px;
-                font-weight: 400;
-                margin-bottom: 5px;
-            }
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
 
-            .contact-us-section-heading {
-                color: #5a7184;
-                font-family: "Roboto";
-                font-size: 18px;
-                font-weight: 700;
-            }
-
-            .contact-us-section-list {
-                list-style-type: none;
-                padding-left: 0;
-            }
-
-            .hr-line {
-                background-color: #5a7184;
-            }
-
-            .contact-us-section-copyright {
-                color: #959ead;
-                font-family: "Roboto";
-                font-size: 16px;
-                font-weight: 400;
-            }
-        </style>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="navbar-section mb-3">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
-                <a class="navbar-brand d-flex flex-row" href="#">
-                    <img src="C:\Users\Praveen\Downloads\tape logo.png" class="nav-logo">   
-                    <span class="nav-heading mt-2">EXPRO'23</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-link active" id="navItem1" href="C:\Users\Praveen\OneDrive\Documents\Expro\expro_org.html">
-                            Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                        <a class="nav-link" href="C:\Users\Praveen\OneDrive\Documents\Expro\workshops.html" id="navItem2">Workshops</a>
-                        <a class="nav-link" href="C:\Users\Praveen\OneDrive\Documents\Expro\technicalevents.html" id="navItem3">Technical Events</a>
-                        <a class="nav-link" href="#deliveryPaymentSection" id="C:\Users\Praveen\OneDrive\Documents\Expro\nontechnicalevents.html">Non-Technical Events</a>
-                        <a class="nav-link" href="#contact-us-section" id="navItem4">Contact Us</a>
-                    </div>
+<body>
+    <div class="navbar-section mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+            <a class="navbar-brand d-flex flex-row" href="#">
+                <img src="../asset/img/tape logo.png" class="nav-logo">
+                <span class="nav-heading mt-2">EXPRO'23</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="../index.html">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="../html/workshops.html" id="navItem2">Workshops</a>
+                    <a class="nav-link" href="../html/technicalevents.html" id="navItem3">Technical Events</a>
+                    <a class="nav-link" href="../html/nontechnicalevents.html" id="navItem3">Non-Technical Events</a>
+                    <a class="nav-link" href="#contact-us-section" id="navItem4">Contact Us</a>
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid section-bg-container pt-3 pb-3">
+        <h1 class="section-heading mb-3 col-12">Non Technical Events</h1>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="section-card mb-3 mr-3 shadow-lg ">
+                    <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp"
+                        class="section-card-image mb-2">
+                    <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
+                    <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="section-card mb-3 mr-3 shadow-lg ">
+                    <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp"
+                        class="section-card-image mb-2">
+                    <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
+                    <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="section-card mb-3 mr-3 shadow-lg ">
+                    <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp"
+                        class="section-card-image mb-2">
+                    <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
+                    <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="section-card mb-3 mr-3 shadow-lg ">
+                    <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp"
+                        class="section-card-image mb-2">
+                    <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
+                    <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="section-card mb-3 mr-3 shadow-lg ">
+                    <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp"
+                        class="section-card-image mb-2">
+                    <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
+                    <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
+                </div>
+            </div>
+
         </div>
-        <div class="container-fluid section-bg-container pt-3 pb-3">
+    </div>
+    <div class="contact-us-section pt-5 pb-3" id="contact-us-section">
+        <div class="container">
             <div class="row">
-                <h1 class="section-heading mb-3 col-12">Non Technical Events</h1>
-                <div class="col-12 col-lg-4">
-                    <div class="section-card mb-3 mr-3 shadow-lg ">
-                        <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp" class="section-card-image mb-2">
-                        <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
-                        <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="section-card mb-3 mr-3 shadow-lg ">
-                        <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp" class="section-card-image mb-2">
-                        <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
-                        <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="section-card mb-3 mr-3 shadow-lg ">
-                        <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp" class="section-card-image mb-2">
-                        <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
-                        <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="section-card mb-3 mr-3 shadow-lg ">
-                        <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp" class="section-card-image mb-2">
-                        <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
-                        <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="section-card mb-3 mr-3 shadow-lg ">
-                        <img src="https://assets.skyfilabs.com/images/blog/mechanical-mini-projects-cover-pic.webp" class="section-card-image mb-2">
-                        <p class="section-card-description mb-2 ml-3">Product Design and Development</p>
-                        <button class="btn btn-success register-now-button mb-2 ml-3 shadow-lg">Register Now</button>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="contact-us-section pt-5 pb-3" id="contact-us-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="text-center text-md-left">
-                            <img src="C:\Users\Praveen\Downloads\tape logo.png" class="contact-us-logo" />
-                            <div class="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">
-                                <div class="contact-us-section-icon-container">
-                                    <a href="https://mitindia.edu/en/pt-home">
-                                        <i class="fab fa-google icon"></i>
-                                    </a>
-                                </div>
-                                <div class="contact-us-section-icon-container">
-                                    <a href="https://instagram.com/tape__mit?igshid=MjljNjAzYmU=">
-                                        <i class="fab fa-instagram icon"></i>
-                                    </a>
-                                </div>
-                                <div class="contact-us-section-icon-container">
-                                    <a href="https://www.linkedin.com/company/the-association-of-production-engineers/">
-                                        <i class="fa fa-linkedin-square icon"></i>
-                                    </a>
-                                </div>
-                                <div class="contact-us-section-icon-container">
-                                    <a href="https://goo.gl/maps/xDvAEjHQkB7pa6es5">
-                                        <i class="fas fa-map-marked-alt icon"></i>
-                                    </a>
-                                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="text-center text-md-left">
+                        <img src="asset/img/tape logo.png" class="contact-us-logo" />
+                        <div class="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">
+                            <div class="contact-us-section-icon-container">
+                                <a href="https://mitindia.edu/en/pt-home">
+                                    <i class="fab fa-google icon"></i>
+                                </a>
                             </div>
-                            <p class="contact-us-section-text " style="font-size: larger; color: #959ead;">The Association of Production Engineers</p>
+                            <div class="contact-us-section-icon-container">
+                                <a href="https://instagram.com/tape__mit?igshid=MjljNjAzYmU=">
+                                    <i class="fab fa-instagram icon"></i>
+                                </a>
+                            </div>
+                            <div class="contact-us-section-icon-container">
+                                <a href="https://www.linkedin.com/company/the-association-of-production-engineers/">
+                                    <i class="fa fa-linkedin-square icon"></i>
+                                </a>
+                            </div>
+                            <div class="contact-us-section-icon-container">
+                                <a href="https://goo.gl/maps/xDvAEjHQkB7pa6es5">
+                                    <i class="fas fa-map-marked-alt icon"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-lg-4 mt-3">
-                        <h1 class="contact-us-section-heading pb-2">Contact Us</h1>
-                        <ul class="contact-us-section-list">
-                            <li class="mb-3">
-                                <i class="fa fa-envelope icon mr-2"></i>
-                                <span class="contact-us-section-text">tapemit2023@gmail.com</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fa fa-phone-alt icon mr-2"></i>
-                                <span class="contact-us-section-text">+91 99525 18845</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fab fa-instagram icon mr-2"></i>
-                                <span class="contact-us-section-text">tape__mit</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fab fa-linkedin icon mr-2"></i>
-                                <span class="contact-us-section-text">The Association of Production Engineers</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-4 mt-3">
-                        <h1 class="contact-us-section-heading pb-2">For Queries</h1>
-                        <ul class=" contact-us-section-list">
-                            <li class=" mb-2">
-                                <p class="contact-us-section-text">Kamalesh A</p>
-                                <i class="fa fa-phone-alt icon mr-2"></i>
-                                <span class="contact-us-section-text">+91 99525 18845</span>
-                            </li>
-                            <li class=" mb-2">
-                                <p class="contact-us-section-text">Fahad K S</p>                               
-                                <i class="fa fa-phone-alt icon mr-2"></i>
-                                <span class="contact-us-section-text">+91 93459 94635</span>
-                            </li>
-                            <li class=" mb-2">
-                                <p class="contact-us-section-text">Thiripurasundaran S</p>
-                                <i class="fa fa-phone-alt icon mr-2"></i>
-                                <span class="contact-us-section-text">+91 96982 43241</span>
-                            </li>
-                        </ul>   
-                    </div>
-                    <div class="col-12 text-center mt-3">
-                        <i class="fas fa-map-marked-alt icon mr-2"></i>
-                        <span class="contact-us-section-text">Madras Institute of Technology Campus, Anna University, Chromepet, Chennai - 600044</span>
+                        <p class="contact-us-section-text " style="font-size: larger; color: #959ead;">The Association of
+                            Production Engineers</p>
                     </div>
                 </div>
-            </div>
-            <hr class="hr-line" />
-            <div class="text-center">
-                <i class="fa fa-copyright icon" style="color: #959ead;" aria-hidden="true"></i>
-                <span class="contact-us-section-copyright" >The Association Of Production Engineers, MIT Campus</span>
-            </div>
+                <div class="col-6 col-md-4 col-lg-4 mt-3">
+                    <h1 class="contact-us-section-heading pb-2">Contact Us</h1>
+                    <ul class="contact-us-section-list">
+                        <li class="mb-3">
+                            <i class="fa fa-envelope icon mr-2"></i>
+                            <span class="contact-us-section-text">tapemit2023@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa fa-phone-alt icon mr-2"></i>
+                            <span class="contact-us-section-text">+91 99525 18845</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-instagram icon mr-2"></i>
+                            <span class="contact-us-section-text">tape__mit</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-linkedin icon mr-2"></i>
+                            <span class="contact-us-section-text">The Association of Production Engineers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 mt-3">
+                    <h1 class="contact-us-section-heading pb-2">For Queries</h1>
+                    <ul class=" contact-us-section-list">
+                        <li class=" mb-2">
+                            <p class="contact-us-section-text">Kamalesh A</p>
+                            <i class="fa fa-phone-alt icon mr-2"></i>
+                            <span class="contact-us-section-text">+91 99525 18845</span>
+                        </li>
+                        <li class=" mb-2">
+                            <p class="contact-us-section-text">Fahad K S</p>
+                            <i class="fa fa-phone-alt icon mr-2"></i>
+                            <span class="contact-us-section-text">+91 93459 94635</span>
+                        </li>
+                        <li class=" mb-2">
+                            <p class="contact-us-section-text">Thiripurasundaran</p>
+                            <i class="fa fa-phone-alt icon mr-2"></i>
+                            <span class="contact-us-section-text">+91 96982 43241</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <i class="fas fa-map-marked-alt icon mr-2"></i>
+                    <span class="contact-us-section-text">Madras Institute of Technology Campus, Anna University, Chromepet,
+                        Chennai - 600044</span>
+                </div>
             </div>
         </div>
-    </body>
+        <hr class="hr-line" />
+        <div class="text-center">
+            <i class="fa fa-copyright icon" style="color: #959ead;" aria-hidden="true"></i>
+            <span class="contact-us-section-copyright">The Association Of Production Engineers, MIT Campus</span>
+        </div>
+    </div>
+</body>
+
 </html>
